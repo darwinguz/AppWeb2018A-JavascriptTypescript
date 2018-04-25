@@ -46,7 +46,9 @@ var usuario = {
     apellido: "Eguez",
     cedula: 'Eguez',
     edad: 28, //buena practica poner coma al final
-    //imprimir:()
+    imprimir: function () {
+        console.log(this.nombre + ' ' + this.apellido + ' ' + this.edad);
+    }
 };
 console.log(usuario.nombre);
 console.log(usuario);
@@ -56,7 +58,7 @@ console.log(usuario);
 //agregar atributos
 usuario.fechaNacimiento = new Date();
 console.log(usuario)
-usuario.mascotas={};
+usuario.mascotas = {};
 usuario.mascotas.nombre = "Gato";
 console.log(usuario);
 
@@ -73,19 +75,19 @@ var arreglo = [
     null,
     new Date(),
     {
-        nombre:"Darwin"
+        nombre: "Darwin"
     },
-    [1,2,3,true]
+    [1, 2, 3, true]
 ]
 console.log(arreglo)
 
 //se sobreentiende que es var los parametros
 function sumarNumeros(numeroUno, numeroDos) {
-    return numeroUno+numeroDos;
+    return numeroUno + numeroDos;
 }
 
-console.log(sumarNumeros(1,3));
-console.log(sumarNumeros(1,4554.34));
+console.log(sumarNumeros(1, 3));
+console.log(sumarNumeros(1, 4554.34));
 
 var potenciaDeDos = function noEsNecesarioPonerElNombre(numero) {
 
@@ -109,7 +111,7 @@ var usuario2 = {
     edad: 28, //buena practica poner coma al final
     edadAlCuadrado: potenciaDeDos(this.edad),
     imprimir: function () {
-        console.log(this.nombre+' '+this.apellido+' '+this.edad)
+        console.log(this.nombre + ' ' + this.apellido + ' ' + this.edad)
     }
 };
 
