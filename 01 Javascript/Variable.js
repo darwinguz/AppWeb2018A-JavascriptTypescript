@@ -58,7 +58,7 @@ console.log(usuario);
 //agregar atributos
 usuario.fechaNacimiento = new Date();
 console.log(usuario)
-usuario.mascotas = {};
+usuario.mascotas = {}        ;
 usuario.mascotas.nombre = "Gato";
 console.log(usuario);
 
